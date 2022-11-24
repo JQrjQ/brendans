@@ -1,12 +1,12 @@
 <div class=" w-full min-h-screen">
     <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0  mx-auto
-        bg-violet-900 w-full"
+        bg-white w-full"
         x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
         <!--Logo etc-->
-        <div class="flex items-center ">
+        <div class="flex flex-col items-center ">
             <h1 class="text-orange-700 font-bold">
-                <a href="/" class="" alt="Logo Link to Homepage">
-                    Brendan's Bus Hire</a>
+                <a href="/" class="text-4xl tracking-tighter mb-3 text-center lg:text-7xl" alt="Logo Link to Homepage">
+                    brendan's<span class="text-violet-900">bus</span>hire</a>
             </h1>
         </div>
         <!--Toggle button (hidden on large screens)-->
@@ -18,7 +18,7 @@
         </button>
 
         <!--Menu-->
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" x-show.transition="true">
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center " :class="{ 'block shadow-3xl z-10': isOpen, 'hidden': !isOpen }" x-show.transition="true">
 
             {% if navigation.items %}
 
@@ -33,12 +33,12 @@
             {% endif %}
         </div>
     </nav>
-    <div class="w-full bg-orange-700 flex flex-col justify-evenly">
+    <div class="w-full bg-violet-900 flex flex-col justify-evenly -z-10">
         <div class="mx-auto py-3">
             <h3 class="flex mx-auto justify-center
-                font-strong bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">+353 (0)87 125 1212</h2>
+                font-strong bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white">+353 (0)87 125 1212</h3>
             <h3 class="flex mx-auto justify-center
-                bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse">Call Brendan Now!</h3>
+                bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white animate-pulse">Call Brendan Now!</h3>
         </div>
     </div>
 

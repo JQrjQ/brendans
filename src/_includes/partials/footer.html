@@ -1,9 +1,28 @@
-<footer class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4">
-    <small class="text-gray-500">Copyright ©
+<footer class="min-h-screen bottom-0 text-center w-full py-4 flex flex-col">
+     <div class="bg-violet-900 text-white flex flex-grow flex-col items-center justify-evenly">
+        <h3 class="flex text-5xl tracking-tighter mb-3 text-center lg:text-7xl">Anywhere</h3>
+        <h3 class="flex text-5xl tracking-tighter mb-3 text-center lg:text-7xl">Anytime!</h3>
+    </div>
+    <div class="flex flex-col items-center mt-4 ">
+        <h3 class="text-orange-700 font-bold">
+            <a href="/" class="text-4xl tracking-tighter mb-3 text-center lg:text-7xl" alt="Logo Link to Homepage">
+                brendan's<span class="text-violet-900">bus</span>hire</a>
+        </h3>
+        <!--h4 class="text-4xl font-bold tracking-tighter mb-3 text-center lg:text-7xl">claremorris, co. mayo</h4-->
+        <h3 class="flex mx-auto justify-center
+        font-strong bg-clip-text text-transparent bg-gradient-to-r from-violet-900 to-orange-700">+353 (0)87 125 1212
+        </h3>
+        <p class="text-2xl text-violet-900 font-bold tracking-tighter mb-3 text-center lg:text-7xl">Acres</p>
+        <p class="text-2xl text-violet-900 font-bold tracking-tighter mb-3 text-center lg:text-7xl">Claremorris</p>
+        <p class="text-2xl text-violet-900 font-bold tracking-tighter mb-3 text-center lg:text-7xl">Co. Mayo</p>
+        <p class="text-2xl text-violet-900 font-bold tracking-tighter mb-3 text-center lg:text-7xl">F23 C867</p>
+    </div>
+   
+
+    <small class="text-violet-900 bg-orange-700">Copyright ©
         {{settings.name}}
-        2020. Made with ❤ by
+        2022. Made with ❤ by
         <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
         •
-        <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a>
     </small>
 </footer>
