@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 /*Your Custom CSS Goes here*/
-
+*{
+ border: 1px solid yellowgreen;
+}
 h1 {
   @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
 }
