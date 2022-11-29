@@ -1,4 +1,4 @@
-<div class=" w-full min-h-screen">
+<div class="flex flex-col w-full min-h-screen">
     <nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0  mx-auto
         bg-white w-full"
         x-data="{ isOpen: false }" @keydown.escape="isOpen = false"  @click.away="isOpen = false">
@@ -33,13 +33,14 @@
             {% endif %}
         </div>
     </nav>
-    <div class="w-full bg-violet-900 flex flex-col justify-evenly -z-10">
-        <div class="mx-auto py-3">
-            <h3 class="flex mx-auto justify-center
-                font-strong bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white">+353 (0)87 125 1212</h3>
-            <h3 class="flex mx-auto justify-center
-                bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white animate-pulse">Call Brendan Now!</h3>
+
+        <div class="flex w-full bg-violet-900 flex-col justify-evenly -z-10">
+            <div class="mx-auto py-3">
+                <h3 class="flex mx-auto justify-center
+                    font-strong bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white">+353 (0)87 125 1212</h3>
+                <h3 class="flex mx-auto justify-center
+                    bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-white animate-pulse">Call Brendan Now!</h3>
+            </div>
         </div>
-    </div>
 
 
